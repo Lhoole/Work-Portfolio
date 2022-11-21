@@ -1,0 +1,76 @@
+:root {
+    --myred: rgb(82, 7, 7);
+
+}
+* {
+    box-sizing: border-box;
+  }
+.Headerbar{
+    padding: 15px;
+    background-color: var(--myred);
+    color: white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.Headerbar header h1{
+    display: inline-block;
+    font-size: 35px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    float: left;
+}
+.Headerbar p {
+    position: absolute;
+    margin-left: 200px;
+    bottom: 18px;
+}
+
+.Headerbar nav {
+    float: right;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+nav ul li{
+    display: inline-block;
+    font-size: 25px;
+    padding: 2px 10px;
+    margin-top: 0;
+    justify-content: flex-end;
+    vertical-align: middle;
+}
+nav ul li:hover{
+    background-color: rgba(0, 0, 0, 0.203);
+    z-index: 2;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+.banner img{
+    margin-top: 65px;
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .Headerbar {
+        background-color: bisque;
+    }
+        nav ul li{
+    }
+}
+@media screen and (max-width: 768px) {
+    .Headerbar {
+        /* display: none; */
+        background-color: black;
+    }
+}
