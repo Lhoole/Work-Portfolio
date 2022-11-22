@@ -60,11 +60,41 @@ nav ul li a{
     margin-top: 65px;
     width: 100%;
 }
+aside {
+    float: left;
+    display: block;
+    margin: 10px;
+}
+
+aside h2 {
+    font-size: 25px;
+}
+
+.About-me {
+    font-size: larger;
+}
+.main-card {
+    display: block;
+    width: 80%;
+    justify-content: center;
+}
+
+.work-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.Contactinfo ul li {
+    display: inline-block;
+    list-style: none;
+}
 
 @media screen and (max-width: 992px) {
     .Headerbar {
         background-color: bisque;
     }
+    
         nav ul li{
     }
 }
@@ -73,4 +103,13 @@ nav ul li a{
         /* display: none; */
         background-color: black;
     }
+
+    .work-card {
+        width: 80%;
+    }
 }
+@media screen and (max-width: 576px) {
+    .Headerbar {
+      background-color: #8ac4ff;
+    }
+  }
