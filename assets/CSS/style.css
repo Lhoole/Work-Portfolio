@@ -16,7 +16,7 @@
 }
 
 .Headerbar header h1{
-    display: inline-block;
+    display: flex;
     font-size: 35px;
     flex-wrap: wrap;
     flex-direction: row;
@@ -60,16 +60,20 @@ nav ul li a{
     margin-top: 65px;
     width: 100%;
 }
-aside {
-    float: left;
-    display: block;
-    margin: 10px;
+.fullcontent {
+    display: flex;
+    flex-direction: column;
 }
-
-aside h2 {
+.fullcontent section {
+    display: flex;
+    flex-direction: row;
+}
+.contenthead {
     font-size: 25px;
+    border: solid black;
+    width: 500px;
+    float: left;
 }
-
 .About-me {
     font-size: larger;
 }
@@ -94,16 +98,26 @@ aside h2 {
     .Headerbar {
         background-color: bisque;
     }
-    
-        nav ul li{
+
+    .Headerbar p {
+        display: none;
+    }
+    .Headerbar header h1 {
+        display: none;
     }
 }
+
 @media screen and (max-width: 768px) {
     .Headerbar {
         /* display: none; */
         background-color: black;
     }
-
+        
+    .Headerbar nav ul li{
+        display: flex;
+        flex-direction: column;
+        font-size: smaller;
+    }
     .work-card {
         width: 80%;
     }
