@@ -131,17 +131,19 @@ nav ul li a{
     flex-direction: column;
     justify-content: flex-start;
     min-height: 100%;
-    padding: 2rem;
 }
-
+.workContentbody {
+    justify-content: center;
+}
 .card {
+    display: flex;
     border: solid;
     position: relative;
-    text-align: center;
     justify-content: space-around;
     margin: 2%;
     min-width: 280px;
     -webkit-filter: brightness(70%);
+    
 }
 .card a {
     max-height:100%; max-width:100%;
