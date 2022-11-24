@@ -1,5 +1,6 @@
 :root {
     --myred: rgb(82, 7, 7);
+    --mygrey:  rgb(37, 37, 37);
 }
 * {
     box-sizing: border-box;
@@ -8,7 +9,7 @@
 
   /* HEADER AND NAV */
 .Headerbar{
-    padding: 10px;
+    padding: 10px 10px 10px 0px;
     background-color: var(--myred);
     color: white;
     position: fixed;
@@ -28,6 +29,11 @@
     -webkit-text-stroke-width: .2px;
     float: left;
     z-index: 4;
+    background-color: var(--mygrey);
+    padding: 2px;
+    padding-left: 20px;
+    border: solid black;
+    border-left: 0px;
 }
 
 .Headerbar nav {
@@ -43,6 +49,7 @@ nav ul li{
     margin-top: 0;
     justify-content: flex-end;
     vertical-align: middle;
+    border-bottom: solid var(--mygrey) 5px;
 }
 nav ul li:hover{
     background-color: rgba(0, 0, 0, 0.203);
@@ -57,7 +64,7 @@ nav ul li a{
 
 /* BANNER / HERO */
 .banner {
-    margin-top: 55px;
+    margin-top: 59px;
     max-height: 200px;
     display: flex;
     flex-direction: column;

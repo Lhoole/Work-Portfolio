@@ -12,6 +12,7 @@ Not Required.
 ## Usage
 
 To see and overview of who I am, what work I have done and provide links to said work.
+Access via: https://lhoole.github.io/Work-Portfolio/
 
 ![Screenshot](assets/images/ScreenshotPortfolio.png)
 
