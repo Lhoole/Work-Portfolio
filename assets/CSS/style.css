@@ -154,7 +154,6 @@ nav ul li a{
     font-size: 30px;
     color: white;
     z-index: 1;
-    -webkit-filter: brightness(100%);
 }
 .card .card-header a{
     text-decoration: none;
