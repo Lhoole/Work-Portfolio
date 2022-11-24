@@ -192,7 +192,9 @@ nav ul li a{
 }
 
 /* CONTACT SECTION */
-
+.Contactinfo{
+    margin-bottom: 30px;
+}
 .Contactinfo ul li {
     display: inline-block;
     list-style: none;
