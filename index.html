@@ -11,14 +11,11 @@
 
 <body>
     <section class="Headerbar">
-        <header>
-            <h1>Luke Hoole</h1>
-            <p>
-                A portfolio of my work throughout my course.
-            </p>
+        <header class="hidden">
+            <h1>Luke Hoole</h1>           
         </header>
 
-        <nav>
+        <nav class="pagelinks">
             <ul>
                 <li>
                     <a href="#About-me">About Me</a>
@@ -37,12 +34,15 @@
     </section>
 
     <section class="banner">
-        <img src="./assets/images/placeholder.png" alt="banner placeholder text">
+        <h3 class="bannerheader">
+            A portfolio of my work throughout my course.
+        </h3>
+        <img src="./assets/images/tshirtphoto.jpg" alt="banner showing bluered fabric">
     </section>
 
    <div class="fullcontent">
 
-        <section class="About-me">
+        <section class="About-me" id="About-me">
             <div class="aboutaside contenthead">
                 <h2>About Me</h2>
             </div>
@@ -52,13 +52,17 @@
                     arts like blacksmithing and acting, a cocktail bartender in hospitality, or science as a molecular 
                     pathologist. I now look forward to a career in progaming and development to pursue
                     a different kind of creativity.</p>
+                <p>
+                    I enjoy the outdoors and dream to work online so I can live on a semi self-sufficient 
+                    homestead somewhere rural.
+                </p>
             </div>
         </section>
 
 
         <br/>
 
-        <section class="Workbody">
+        <section class="Workbody" id="Workbody">
             <div class="workaside contenthead">
                 <h2>Work</h2>
             </div>
@@ -66,7 +70,7 @@
             <div class="contentbody">
                 <section class="main-card card">
                     <h3 class="card-header">
-                        Web Refractor
+                        <a href="https://lhoole.github.io/Web-development-infographic-refactor/" target="_blank">Web Refactor</a>
                     </h3>
                     <img src="./assets/images/refractor screenshot.png" alt="refractor example" />
                 </section>
@@ -74,36 +78,42 @@
             
                 <section class="work-card card">
                     <h3 class="card-header">
-                        placeholder text
+                        <a href="##" target="_blank">Portfolio</a>
                     </h3>
-                    <img src="./assets/images/refractor screenshot.png" alt="refractor example" />
+                    <img src="./assets/images/ScreenshotPortfolio.png" alt="refractor example" />
                 </section>
                 
                 <section class="work-card card">
                     <h3 class="card-header">
-                        placeholder text
+                        <a href="##" target="_blank">Lorem</a>
                     </h3>
-                    <img src="./assets/images/refractor screenshot.png" alt="refractor example" />
+                    <img src="./assets/images/under construction.png" alt="refractor example" />
                 </section>
             </div>
         </section>
 
         <br/>
 
-        <section class="Contactinfo">
+        <section class="Contactinfo" id="Contactinfo">
             <div class="contactaside contenthead">
                 <h2>Contact Me</h2>
             </div>
             <div class="contentbody">
                 <ul>
-                    <li> Phone </li>
-                    <li> Email </li>
-                    <li> Git </li>
+                    <li> Phone: 
+                        <a href="tel:61411******">+61 411 *** ***</a>
+                    </li>
+                    <li> Email: 
+                        <a href="mailto: luke.hoole@hotmail.com">luke.hoole@hotmail.com</a>
+                    </li>
+                    <li> Github:
+                        <a href="https://github.com/Lhoole" target="_blank">Lhoole</a>
+                    </li>
                 </ul>
             </div>
         </section>
    </div>
-    <section class="Resume">
+    <section class="Resume" id="Resume">
         <!-- insert doccument -->
     </section>
 
