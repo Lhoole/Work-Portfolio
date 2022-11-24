@@ -1,18 +1,19 @@
 :root {
     --myred: rgb(82, 7, 7);
-
 }
 * {
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
   }
 .Headerbar{
-    padding: 15px;
+    padding: 10px;
     background-color: var(--myred);
     color: white;
     position: fixed;
     top: 0px;
     width: 100%;
     z-index: 1;
+    border: solid 1px black;
 }
 
 .Headerbar header h1{
@@ -22,7 +23,7 @@
     flex-direction: row;
     color: white;
     -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: .2px;
     float: left;
 }
 .Headerbar p {
@@ -53,12 +54,34 @@ nav ul li a{
     text-decoration: none;
     color: white;
     -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: .2px;
 }
-
+.banner {
+    margin-top: 55px;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    position: relative;
+}
 .banner img{
-    margin-top: 65px;
     width: 100%;
+}
+.banner .bannerheader {
+    position: absolute;
+    bottom: 8px;
+    right: 2%;
+    border: solid .1vw;
+    padding: .6vw;
+    background-color: var(--myred);
+    color: white;
+    font-size: 1.4vw;
+    z-index: 4;
+    width: 33vw;
+    text-align: center;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .2px;
 }
 .fullcontent {
     display: grid;
@@ -67,12 +90,17 @@ nav ul li a{
 .fullcontent section {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
 .contenthead {
-    font-size: 25px;
-    border: solid black;
-    width: 20%;
+    font-size: 35px;
+    border-right: 5px solid var(--myred);
+    width: 15%;
+    min-width: 190px;
     float: left;
+    color: var(--myred);
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .2px;
 }
 .contentbody {
     width: 80%;
@@ -83,6 +111,13 @@ nav ul li a{
     border-width: 1px;
     display: flex;
     flex-wrap: wrap;
+}
+.About-me .contentbody {
+    font-size: 22px;
+    text-align: left;
+}
+.About-me .contentbody p{
+    margin-bottom: 10px;
 }
 .workbody {
     display: flex;
@@ -107,10 +142,15 @@ nav ul li a{
 .card .card-header {
     position: absolute;
     bottom: 8px;
-    left: 2%;
-    border: solid;
+    left: -10px;
+    border: solid black;
     padding: 20px;
     background-color: var(--myred);
+    font-size: 30px;
+    color: white;
+}
+.card .card-header a{
+    text-decoration: none;
     color: white;
 }
 
@@ -126,50 +166,51 @@ nav ul li a{
 .About-me {
     font-size: larger;
 }
-/* .main-card {
-    display: flex;
-    width: 80vw;
-    justify-content: center;
-    height: 80;
-}
 
-.work-card {
-    display: inline-flexbox;
-    flex-wrap: wrap;
-    width: 40%;
-} */
 
 .Contactinfo ul li {
     display: inline-block;
     list-style: none;
+    padding: 2px;
+    font-size: 25px;
+    font-weight: bold;
 }
-
+.Contactinfo ul li a{
+    text-decoration: none;
+        color: var(--myred);
+}
 @media screen and (max-width: 992px) {
-    .Headerbar {
-        background-color: bisque;
+    .contenthead {
+        font-size: 25px;
+        width: 15%;
+        min-width: 135px;
     }
-
-    .Headerbar p {
-        display: none;
+    
+    .Contactinfo ul li {
+        display: inline-block;
+        padding: 2px;
+        font-size: 20px;
+        font-weight: bold;
     }
-    .Headerbar header h1 {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 768px) {
-    .Headerbar {
-        /* display: none; */
-        background-color: black;
-    }
-        
+
     .Headerbar nav ul li{
-        display: flex;
-        flex-direction: column;
-        font-size: smaller;
-        justify-content: center;
+        display: none;
     }
+    .Headerbar nav{
+        float: left;
+    }
+
+    .Headerbar:hover .pagelinks li {
+            display: flex;
+            flex-direction: column;
+            font-size: smaller;
+            justify-content: center;
+    }
+    
     .work-card {
         width: 80%;
     }
+
+
 }
