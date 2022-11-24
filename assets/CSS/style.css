@@ -61,7 +61,7 @@ nav ul li a{
     width: 100%;
 }
 .fullcontent {
-    display: flex;
+    display: grid;
     flex-direction: column;
 }
 .fullcontent section {
@@ -71,23 +71,73 @@ nav ul li a{
 .contenthead {
     font-size: 25px;
     border: solid black;
-    width: 500px;
+    width: 20%;
     float: left;
 }
+.contentbody {
+    width: 80%;
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.workbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+}
+
+.card {
+    border: solid;
+    position: relative;
+    text-align: center;
+    justify-content: space-around;
+    margin: 2%;
+    min-width: 280px;
+}
+.card img {
+    max-height:100%; max-width:100%;
+    min-width: 100%; min-height: 100%;
+}
+.card .card-header {
+    position: absolute;
+    bottom: 8px;
+    left: 2%;
+    border: solid;
+    padding: 20px;
+    background-color: var(--myred);
+    color: white;
+}
+
+
+.main-card {
+    width: 80%;
+
+}
+.work-card {
+    width: 38%;
+}
+
 .About-me {
     font-size: larger;
 }
-.main-card {
-    display: block;
-    width: 80%;
+/* .main-card {
+    display: flex;
+    width: 80vw;
     justify-content: center;
+    height: 80;
 }
 
 .work-card {
-    display: flex;
+    display: inline-flexbox;
     flex-wrap: wrap;
     width: 40%;
-}
+} */
 
 .Contactinfo ul li {
     display: inline-block;
@@ -117,13 +167,9 @@ nav ul li a{
         display: flex;
         flex-direction: column;
         font-size: smaller;
+        justify-content: center;
     }
     .work-card {
         width: 80%;
     }
 }
-@media screen and (max-width: 576px) {
-    .Headerbar {
-      background-color: #8ac4ff;
-    }
-  }
