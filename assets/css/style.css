@@ -179,7 +179,9 @@ nav ul li a{
     text-decoration: none;
     color: white;
 }
-
+.card .card-header p{
+    font-size: 15px;
+}
 
 .main-card {
     width: 80%;
@@ -222,6 +224,9 @@ nav ul li a{
         padding: 15px;
         font-size: 25px;
     }
+    .card .card-header p{
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 768px) {
 
@@ -245,6 +250,9 @@ nav ul li a{
     .card .card-header {
         padding: 10px;
         font-size: 20px;
+    }
+    .card .card-header p{
+        font-size: 10px;
     }
 
 
