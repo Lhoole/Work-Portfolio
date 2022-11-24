@@ -71,7 +71,7 @@ nav ul li a{
 .contenthead {
     font-size: 25px;
     border: solid black;
-    width: 300px;
+    width: 20%;
     float: left;
 }
 .contentbody {
@@ -81,6 +81,8 @@ nav ul li a{
     text-align: center;
     border-style: solid;
     border-width: 1px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .workbody {
     display: flex;
@@ -89,21 +91,38 @@ nav ul li a{
     min-height: 100%;
     padding: 2rem;
 }
+
 .card {
     border: solid;
-}
-.card-header {
     position: relative;
+    text-align: center;
+    justify-content: space-around;
+    margin: 2%;
+    min-width: 280px;
+}
+.card img {
+    max-height:100%; max-width:100%;
+    min-width: 100%; min-height: 100%;
+}
+.card .card-header {
+    position: absolute;
+    bottom: 8px;
+    left: 2%;
+    border: solid;
+    padding: 20px;
+    background-color: var(--myred);
+    color: white;
 }
 
-.main-card img {
+
+.main-card {
     width: 80%;
-  /* The client insists that images be at least 400px */
-  min-width: 300px;
+
 }
-.work-card img {
-    width: 40%;
+.work-card {
+    width: 38%;
 }
+
 .About-me {
     font-size: larger;
 }
@@ -154,8 +173,3 @@ nav ul li a{
         width: 80%;
     }
 }
-@media screen and (max-width: 576px) {
-    .Headerbar {
-      background-color: #8ac4ff;
-    }
-  }
