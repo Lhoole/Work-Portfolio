@@ -132,12 +132,14 @@ nav ul li a{
     min-width: 280px;
     -webkit-filter: brightness(70%);
 }
-
+.card a {
+    max-height:100%; max-width:100%;
+    min-width: 100%; min-height: 100%;
+}
 .card img {
     max-height:100%; max-width:100%;
     min-width: 100%; min-height: 100%;
     object-fit: fill;
-
 }
 .card:hover {
     -webkit-filter: brightness(100%);
