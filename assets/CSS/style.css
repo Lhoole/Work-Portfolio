@@ -12,7 +12,7 @@
     position: fixed;
     top: 0px;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     border: solid 1px black;
 }
 
@@ -25,11 +25,7 @@
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: .2px;
     float: left;
-}
-.Headerbar p {
-    position: absolute;
-    margin-left: 200px;
-    bottom: 18px;
+    z-index: 4;
 }
 
 .Headerbar nav {
@@ -77,7 +73,7 @@ nav ul li a{
     background-color: var(--myred);
     color: white;
     font-size: 1.4vw;
-    z-index: 4;
+    z-index: 2;
     width: 33vw;
     text-align: center;
     -webkit-text-stroke-color: black;
@@ -136,9 +132,11 @@ nav ul li a{
     min-width: 280px;
     -webkit-filter: brightness(70%);
 }
+
 .card img {
     max-height:100%; max-width:100%;
     min-width: 100%; min-height: 100%;
+    object-fit: fill;
 
 }
 .card:hover {
